@@ -1,0 +1,40 @@
+// Your custom SCSS should be written here...
+#tagline {
+	text-align: center;
+	background-color: $primary-color;
+	padding: 4px;
+	h5 {
+		color: $bright-green;
+	}
+}
+#statement {
+	padding: 80px 0;
+	background-color: $bright-green;
+	color: $primary-color;
+}
+#microscope {
+	height: 380px;
+	background-color: #eee;
+	.desc {
+		margin-top: 280px;
+	}
+}
+#microscope-description {
+	position: relative;
+	margin-top: -360px;
+	z-index: 3000;
+	p {
+		line-height: 1.3em;
+	}
+	height: 380px;
+}
+#join-us {
+
+}
+
+.form-submit-centered {
+	text-align: center;
+	.btn {
+		margin: 0 auto;
+	}
+}
