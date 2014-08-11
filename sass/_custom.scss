@@ -1,4 +1,15 @@
 // Your custom SCSS should be written here...
+/* ==CUSTOMISED== */
+/* nav bar */
+
+.navbar ul li {
+  font-weight: $font-weight-bold;
+}
+.desc {
+  font-size: 0.8em;
+}
+
+
 #tagline {
 	text-align: center;
 	background-color: $primary-color;
@@ -7,11 +18,34 @@
 		color: $bright-green;
 	}
 }
-#statement {
+
+.panel {
 	padding: 80px 0;
+	p.intro {
+  		font-size: 1.4em;
+  		line-height: 1.3em;
+  		color: $white;
+	}
+}
+#statement,
+#who-we-are {
 	background-color: $bright-green;
 	color: $primary-color;
+	h2 {
+		color: $white;
+	}
 }
+#what-we-do {
+	background-color: $navbar-link-color;
+	h2 {
+		color: $bright-green;
+	}
+}
+#who-we-are,
+#what-we-do {
+	min-height: 580px;
+}
+
 #microscope {
 	height: 380px;
 	background-color: #eee;
@@ -28,8 +62,54 @@
 	}
 	height: 380px;
 }
+.scope-pic {
+	width: 200px;
+	height: 200px;
+	background-color: #000;
+	display: block;
+}
+
 #join-us {
 
+}
+#footer {
+	background-color: $primary-color;
+	color: #ddd;
+	.copyright {
+		font-size: 0.8em;
+		line-height: 1.35em;
+	}
+	.icons {
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+	.row {
+		//padding: 20px 0;
+	}
+	.logo {
+		height: 50px;
+		margin: 20px 20px 20px 0;
+		a {
+			height: 100%;
+			img {
+				height: 100%;
+			}
+		}
+	}
+	.social {
+		margin: 20px 0;
+		a {
+			color: $bright-green;
+			font-size: 1.5em;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+	.footer-wrapper {
+		padding: 20px 0;
+	}
+	
 }
 
 .form-submit-centered {

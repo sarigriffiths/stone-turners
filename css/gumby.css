@@ -692,10 +692,6 @@ ul.large li { line-height: 21px; }
 dl dt { font-weight: bold; font-size: 16px; font-size: 1rem; }
 
 @media only screen and (max-width: 768px) { ul, ol, dl, p { text-align: left; } }
-/* ==CUSTOMISED== */
-/* nav bar */
-.navbar ul li { font-weight: 700; }
-
 /* Mobile */
 em { font-style: italic; line-height: inherit; }
 
@@ -1394,9 +1390,10 @@ img { -ms-interpolation-mode: bicubic; }
 .btn.success, .skiplink.success { background: #58c026; border: 1px solid #58c026; }
 .btn.success:hover, .skiplink.success:hover { background: #72d940; }
 .btn.success:active, .skiplink.success:active { background: #44951e; }
-.btn.bright, .skiplink.bright { background: #02ff50; border: 1px solid #02ff50; }
+.btn.bright, .skiplink.bright { background: #02ff50; border: 1px solid #02ff50; color: black; }
 .btn.bright:hover, .skiplink.bright:hover { background: #35ff73; }
 .btn.bright:active, .skiplink.bright:active { background: #00ce40; }
+.btn.bright a, .btn.bright input, .btn.bright button, .skiplink.bright a, .skiplink.bright input, .skiplink.bright button { color: black; }
 
 .btn.metro, .metro .btn, .metro .skiplink, .skiplink.metro, .btn.pretty.squared, .pretty .squared.btn, .pretty .squared.skiplink, .pretty .btn.squared { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 
@@ -1438,7 +1435,7 @@ img { -ms-interpolation-mode: bicubic; }
 /* Icons */
 [class^="icon-"] a:before, [class*=" icon-"] a:before, [class^="icon-"] a:after, [class*=" icon-"] a:after, i[class^="icon-"], i[class*=" icon-"] { font-family: "entypo"; position: absolute; text-decoration: none; zoom: 1; }
 
-i[class^="icon-"], i[class*=" icon-"] { display: inline-block; position: static; min-width: 20px; margin: 0 5px; text-align: center; }
+i[class^="icon-"], i[class*=" icon-"] { display: inline-block; position: static; min-width: 20px; margin: 0 10px 0 0; text-align: center; }
 
 /* Form Styles */
 form { margin: 0 0 18px; }
@@ -1696,16 +1693,44 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
+/* ==CUSTOMISED== */
+/* nav bar */
+.navbar ul li { font-weight: 700; }
+
+.desc { font-size: 0.8em; }
+
 #tagline { text-align: center; background-color: #333333; padding: 4px; }
 #tagline h5 { color: #02ff50; }
 
-#statement { padding: 80px 0; background-color: #02ff50; color: #333333; }
+.panel { padding: 80px 0; }
+.panel p.intro { font-size: 1.4em; line-height: 1.3em; color: white; }
+
+#statement, #who-we-are { background-color: #02ff50; color: #333333; }
+#statement h2, #who-we-are h2 { color: white; }
+
+#what-we-do { background-color: #999999; }
+#what-we-do h2 { color: #02ff50; }
+
+#who-we-are, #what-we-do { min-height: 580px; }
 
 #microscope { height: 380px; background-color: #eee; }
 #microscope .desc { margin-top: 280px; }
 
 #microscope-description { position: relative; margin-top: -360px; z-index: 3000; height: 380px; }
 #microscope-description p { line-height: 1.3em; }
+
+.scope-pic { width: 200px; height: 200px; background-color: #000; display: block; }
+
+#footer { background-color: #333333; color: #ddd; }
+#footer .copyright { font-size: 0.8em; line-height: 1.35em; }
+#footer .icons { font-size: 2em; margin-bottom: 10px; }
+#footer .logo { height: 50px; margin: 20px 20px 20px 0; }
+#footer .logo a { height: 100%; }
+#footer .logo a img { height: 100%; }
+#footer .social { margin: 20px 0; }
+#footer .social a { color: #02ff50; font-size: 1.5em; }
+#footer .social a:hover { color: white; }
+#footer .footer-wrapper { padding: 20px 0; }
 
 .form-submit-centered { text-align: center; }
 .form-submit-centered .btn { margin: 0 auto; }
